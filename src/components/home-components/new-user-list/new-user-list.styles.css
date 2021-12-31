@@ -1,0 +1,63 @@
+.new-user-list-container {
+  flex: 1;
+
+  -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+
+  padding: 20px;
+  margin-right: 20px;
+}
+
+.new-user-list-title {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.new-user-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.new-user-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.new-user-list-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 0px;
+}
+
+.new-user {
+  display: flex;
+  flex-direction: column;
+}
+
+.new-user-name {
+  font-weight: 600;
+}
+
+.new-user-job-title {
+  font-weight: 300;
+}
+
+.new-user-view-button {
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 10px;
+  padding: 7px 10px;
+  background-color: #eeeef7;
+  color: #555;
+  cursor: pointer;
+}
+
+.new-user-view-icon {
+  font-size: 16px;
+  margin-right: 5px;
+}

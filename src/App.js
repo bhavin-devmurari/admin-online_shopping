@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import Topbar from './components/topbar/topbar.component';
+import Sidebar from './components/sidebar/sidebar.component';
+import HomePage from './pages/home-page/home.page';
 
-function App() {
+import './app.styles.css';
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Topbar />
+      <div className="app-body-container">
+        <Sidebar />
+        {/* <div className="others">OTHER PAGE CONTENT GOES HERE</div> */}
+        <HomePage />
+      </div>
     </div>
   );
-}
+};
 
 export default App;
